@@ -1,0 +1,79 @@
+#about-me {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 80px 10%;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+#profile-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--text-primary);
+  flex-shrink: 0;
+  cursor: zoom-in;
+}
+
+#about-me.blurred {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+#image-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  backdrop-filter: blur(6px);
+}
+
+#preview-image {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+#overlay-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+#overlay-close:hover {
+  opacity: 1;
+}
+
+#about-me-text h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+#about-me-text p {
+  color: var(--text-primary);
+  max-width: 600px;
+}
+
+img.onclick {
+  width: 100rem;
+  height: 100rem;
+}

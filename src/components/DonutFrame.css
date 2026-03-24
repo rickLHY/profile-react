@@ -1,0 +1,17 @@
+#donut-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 57px;
+  background: radial-gradient(ellipse at center, var(--bg-donut-inner) 0%, var(--bg-primary) 70%);
+  transition: background 0.2s;
+}
+
+#d {
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.1;
+  text-shadow: var(--donut-shadow);
+  transition: color 0.2s, text-shadow 0.2s;
+}

@@ -1,0 +1,47 @@
+#my-project {
+  padding: 80px 10%;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#my-project h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+}
+
+.project {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: border-color 0.2s, transform 0.2s, background-color 0.2s;
+}
+
+.project:hover {
+  border-color: var(--hover-border);
+  transform: translateY(-2px);
+}
+
+.project h2 {
+  font-size: 1.1rem;
+  color: var(--text-body);
+  margin-bottom: 8px;
+}
+
+.project h2 a {
+  color: var(--text-body);
+  text-decoration: none;
+}
+
+.project h2 a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.project p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

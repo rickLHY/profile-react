@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Theme variables ── */
+:root[data-theme="dark"] {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #111;
+  --bg-card: #161616;
+  --bg-footer: #0a0a0a;
+  --bg-donut-inner: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-body: #e0e0e0;
+  --text-nav: #aaa;
+  --text-muted: #888;
+  --text-soft: #bbb;
+  --text-footer: #555;
+  --border: #2a2a2a;
+  --border-footer: #1e1e1e;
+  --donut-shadow: 0 0 8px #ffffffaa;
+  --hover-border: #ffffff;
+  --theme-btn-bg: #222;
+  --theme-btn-border: #444;
+  --theme-btn-color: #ccc;
+  --theme-btn-hover-bg: #333;
+}
+
+:root[data-theme="light"] {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-card: #eeeeee;
+  --bg-footer: #e0e0e0;
+  --bg-donut-inner: #e0e0e0;
+  --text-primary: #111111;
+  --text-body: #333333;
+  --text-nav: #555555;
+  --text-muted: #666666;
+  --text-soft: #555555;
+  --text-footer: #888888;
+  --border: #dddddd;
+  --border-footer: #cccccc;
+  --donut-shadow: 0 0 8px #00000033;
+  --hover-border: #111111;
+  --theme-btn-bg: #e8e8e8;
+  --theme-btn-border: #cccccc;
+  --theme-btn-color: #444444;
+  --theme-btn-hover-bg: #dddddd;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  transition: background-color 0.2s, color 0.2s;
+  scroll-behavior: smooth;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: var(--bg-footer);
+  color: var(--text-footer);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-footer);
+  transition: background-color 0.2s, border-color 0.2s;
+}

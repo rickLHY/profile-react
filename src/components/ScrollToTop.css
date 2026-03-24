@@ -1,0 +1,27 @@
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+button {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+button.block {
+  display: block;
+}
+
+button.hidden {
+  display: none;
+}
