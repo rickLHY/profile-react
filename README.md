@@ -63,6 +63,10 @@ npm run preview
 ### Scroll To Top
 - 頁面捲動超過 300px 後，右下角出現返回頂部按鈕，點擊平滑捲回頂部
 
+### Footer
+- 顯示版權文字
+- **GitHub 圖示連結**：點擊跳轉至本專案的 GitHub Repo
+
 ---
 
 ## 技術棧
@@ -74,3 +78,4 @@ npm run preview
 | Vite | 8 |
 | react-i18next | 16 |
 | i18next | 25 |
+| @radix-ui/react-icons | 1 |

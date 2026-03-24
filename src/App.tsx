@@ -1,6 +1,7 @@
 import './App.css';
 import { ThemeProvider } from './context/ThemeContext';
 import { useTranslation } from 'react-i18next';
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import Navbar from './components/Navbar';
 import DonutFrame from './components/DonutFrame';
 import AboutMe from './components/AboutMe';
@@ -20,6 +21,14 @@ function AppContent() {
       <ScrollToTop />
       <footer>
         <p>{t('footer.rights')}</p>
+        <a
+          href="https://github.com/rickLHY/profile-react"
+          target="_blank"
+          rel="noreferrer"
+          id="footer-github"
+        >
+          <GitHubLogoIcon width={20} height={20} />
+        </a>
       </footer>
     </>
   );

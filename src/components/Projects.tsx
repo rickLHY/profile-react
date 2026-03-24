@@ -9,7 +9,9 @@ export default function Projects() {
       id: 1,
       title: 'Tetris',
       desc: t('projects.tetrisDesc'),
-      url: import.meta.env.VITE_PROJECT_TETRIS_URL,
+      url:
+        import.meta.env.VITE_PROJECT_TETRIS_URL ||
+        'https://exotic-rare-specifics-shadows.trycloudflare.com/',
     },
   ];
 
@@ -19,7 +21,9 @@ export default function Projects() {
       {projects.map((p) => (
         <div key={p.id} className="project">
           <h2>
-            <a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
+            <a href={p.url} target="_blank" rel="noreferrer">
+              {p.title}
+            </a>
           </h2>
           <p>{p.desc}</p>
         </div>
