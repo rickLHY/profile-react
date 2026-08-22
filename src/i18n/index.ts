@@ -8,9 +8,11 @@ i18n.use(initReactI18next).init({
     en: { translation: en },
     zh: { translation: zh },
   },
-  lng: 'en',
+  lng: localStorage.getItem('portfolio-language') || 'zh',
   fallbackLng: 'en',
   interpolation: { escapeValue: false },
 });
+
+i18n.on('languageChanged', (language) => localStorage.setItem('portfolio-language', language));
 
 export default i18n;
