@@ -93,6 +93,22 @@ function AppContent() {
               {t('hero.secondary')}
             </a>
           </div>
+          <div className="portrait-stage">
+            <span className="portrait-shape portrait-triangle" aria-hidden="true" />
+            <span className="portrait-shape portrait-circle" aria-hidden="true" />
+            <figure className="portrait-card">
+              <div className="portrait-window">
+                <img src={`${import.meta.env.BASE_URL}profile-photo.webp`} alt="Hong-You Liao" />
+              </div>
+              <figcaption>
+                <strong>HONG-YOU LIAO</strong>
+                <span>WEB · SYSTEM · INTERACTION</span>
+              </figcaption>
+            </figure>
+            <svg className="portrait-line" viewBox="0 0 320 160" aria-hidden="true">
+              <path d="M4 139 C57 130 81 53 131 73 S205 143 245 82 S293 35 316 23" />
+            </svg>
+          </div>
           <div className="proof-row">
             <div>
               <strong>Frontend</strong>

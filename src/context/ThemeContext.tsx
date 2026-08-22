@@ -11,7 +11,7 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem('theme') as Theme) || 'system'
+    () => (localStorage.getItem('portfolio-theme-v2') as Theme) || 'light'
   );
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const cycleTheme = () => {
     const order: Theme[] = ['light', 'dark', 'system'];
     const next = order[(order.indexOf(theme) + 1) % order.length];
-    localStorage.setItem('theme', next);
+    localStorage.setItem('portfolio-theme-v2', next);
     setTheme(next);
   };
 
