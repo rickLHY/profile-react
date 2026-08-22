@@ -16,6 +16,16 @@
 
 React 19 · TypeScript · Vite · react-i18next · Radix Icons · 原生 CSS
 
+## 部署
+
+網站由 GitHub Actions 建置為純靜態 `dist`，再部署到 GitHub Pages：
+
+- 現行網址：[https://ricklhy.github.io/profile-react/](https://ricklhy.github.io/profile-react/)
+- 推送到 `main` 後自動執行 lint、靜態建置與部署
+- 靜態資源使用相對路徑，因此同一份產物可同時支援 GitHub Pages 專案路徑與自訂網域根路徑
+
+自訂網域應在 GitHub Pages 設定中指定，並在 DNS 供應商建立 GitHub Pages 要求的記錄；啟用後保留 HTTPS 強制轉址。
+
 ## 本地開發
 
 ```bash
